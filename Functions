@@ -1,0 +1,70 @@
+FUNCTIONS: To avoid repeating the same logic. 
+1. In-Build function
+2. User-Defined function
+3. Module Function
+
+1.In-Build Functions:
+ - Ex: int(), str(), bool(), etc
+ - parameters are also called arguments. 
+ - Informations can be passed into functions as parameters.  
+---------------------------------------------------------------------------------------------
+2.User-Defined function:
+ - def : definition , A function is defined using the def keyword. 
+ - Block of code which only runs when it is called. 
+ - Caliing a function = to execute the function.
+
+ def function_name (parameters);
+
+Ex: 1,
+def sum(first, second):
+    print(first + second)
+sum(2, 9)
+
+Ex: 2,
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units():
+    print(f"20 days are {calculations_to_units} {name_of_units}")
+    print("All Good!")
+    
+days_to_units()
+
+Ex: 3, Parameters: Passing the input parameter
+- defining the parameters within the bracket
+
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+    print(f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}")
+    print("All Good!")
+
+days_to_units(20)
+days_to_units(30)
+days_to_units(40)
+
+Ex: 4 , Passing two input parameters. 
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days, custome_message):
+    print(f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}")
+    print(custome_message)
+
+days_to_units(20, "Hello Good day!")
+days_to_units(30, "Awesome!")
+---------------------------------------------------------------------------------------------
+3.Module Function:
+ Ex: math module.
+
+ import math
+ print(dir(math))
+
+Ex:
+ from math import sqrt
+ print(sqrt(16))
+ o/p: 4.0
+or, 
+ from math import *
+ print(sqrt(16))
