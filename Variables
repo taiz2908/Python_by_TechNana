@@ -1,0 +1,35 @@
+Variables:
+ - Define memory location where data is being store
+ - Variables are the containers for storing the value. 
+
+ Basic Types in Python -  
+ 1) Numbers(integers '22/1/43', floating'1.1/3.4,11.3'), 
+ 2) boolean('True/False'), 
+ 3) strings
+
+Ex:
+  name = "Taizun"
+  age = 33 / age = "22"
+  print(name, age)
+
+Ex: Here defining two variable with first_name & last_name .
+  first_name = "Tony"
+  last_name = "shark"
+  age = "52"
+  Tony_Genius = True
+  print(first_name + " " + last_name, age, Tony_Genius)
+
+  + - concatenation
+
+  Ex: Taking the i/p from users
+   name = input("Enter your name?")
+   print("Hello" + name)
+or,
+  Ex:
+  print(f"I'm {33} years old") , f stands for formatting
+  print(f" 20 days are{20 * 80 * 66} days")
+or,
+ mins_sec = 20 * 30 * 60
+ seconds_mins = "seconds"
+ print(f"I'm {33} {mins_sec}")
+ print(f" 20 days are {seconds_mins}")
