@@ -1,1 +1,35 @@
+Scope:
+- A variable is only available from inside region it is created.
+- Global Scope = variables available from within any scope. 
+- Local Scope = variables created inside functions, Can only be used inside the functions.
 
+Ex: 1, 
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days, custome_message):
+    print(f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}")
+    print(custome_message)
+
+def hello_gooday(num_of_days):
+    print(name_of_units)
+    print(num_of_days)
+
+hello_gooday(23)
+hello_gooday(24)
+
+Ex: 2,
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days, custome_message):
+    print(f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}")
+    print(custome_message)
+
+def hello_gooday(num_of_days):
+    my_var = "inside variable function"
+    print(name_of_units)
+    print(num_of_days)
+    print(my_var)
+
+hello_gooday(23)
