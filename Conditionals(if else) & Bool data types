@@ -1,1 +1,72 @@
+Comparision Operators: or, Conditionals (< , >, <= ,>= , ==, != )
+ - Equals: a = b
+ - Not equal: a != b
+ - Less than: a < b
+ - Greater than: a > b
+ - Less than eual to: a<= b
+ - Greater than equal to: a >= b
+ 
+Condition can be TRUE or FALSE
 
+Logical Operators: Three types
+ 1. Or : if we have two conditions , we can use or operator.
+ 2. and : if two conditions are true then print true only or else false. 
+ 3. not: makes true to false & false to true. 
+ 
+---------------------If : Simple If statement-----------------------
+Ex:
+ a = 11
+ if a <= 12:
+     print("value is true")
+-----------------------If-else------------------
+Ex: a = 13
+ if a <= 12:
+     print("value is true")
+ else:
+     print("Value is False")
+---------------------- Nested if-else ------------------------
+Ex: 
+age = 40
+if age >= 60:
+    print("senior citizen")
+elif age < 60 and age > 20:
+    print("Adult")
+else:
+    print("Teenager")
+------------------------------
+Ex:
+first = input("enter first number: ")
+operator = input("Enter operator(+,-,%,*): ")
+second = input("Enter second number: ")
+first = int(first)
+second = int(second)
+if operator == "+":
+    print(first + second)
+elif operator == "-":
+    print(first - second)
+elif operator == '%':
+    print(first % second)
+elif operator == '*':
+    print(first * second)
+else:
+    print("Invalid ")
+
+-------------------------------------------------------
+
+Ex: 1,
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+    if num_of_days > 0:
+        return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+    else:
+        return "Invalid Num"
+
+user_input = input("Enter the value\n")
+user_input_num = int(user_input)
+
+calculated_values = days_to_units(user_input_num)
+print(calculated_values)
+
+Ex: 2,
