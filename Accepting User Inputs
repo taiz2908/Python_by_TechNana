@@ -1,0 +1,27 @@
+Function doesn't return anything
+Return Values:
+ - A fucntion can return data as a result. 
+ 
+Ex: 1,
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):    ------> 1. Function is executed 
+    return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+--------> 2. Return value is assigned to variable
+
+my_var = days_to_units(30).  --------> 3. Variable value is print as standard output. 
+print(my_var)
+
+Ex: 2,
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+    return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+
+user_input = input("Enter the value\n")
+user_input_num = int(user_input)
+
+calculated_values = days_to_units(user_input_num)
+print(calculated_values)
