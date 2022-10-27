@@ -19,17 +19,37 @@ Ex:
  if a <= 12:
      print("value is true")
 -----------------------If-else------------------
-Ex: a = 13
- if a <= 12:
+Ex: 1, 
+a = 13
+if a <= 12:
      print("value is true")
  else:
      print("Value is False")
+     
+Ex: 2, Compaire two numbers and print greatest / smallest one, Used (>= / <=)
+ first_num = int(input("Enter first_num: "))
+ second_num = int(input("Enter second Num: "))
+
+ if first_num >= second_num:
+     print(first_num)
+ else:
+     print(second_num)
 ---------------------- Nested if-else ------------------------
-Ex: 
+Ex: 1,
 age = 40
 if age >= 60:
     print("senior citizen")
 elif age < 60 and age > 20:
+    print("Adult")
+else:
+    print("Teenager")
+    
+Ex: 2, # input from user , print sr citizen, adult & teenager
+
+input_user = int(input("Enter the age: "))
+if input_user >= 60:
+    print("Senior citizen")
+elif input_user <= 60 and input_user >= 30:
     print("Adult")
 else:
     print("Teenager")
