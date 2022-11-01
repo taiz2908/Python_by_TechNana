@@ -90,10 +90,42 @@ def days_to_units(num_of_days):
     else:
         return "Invalid Num"
 
-user_input = input("Enter the value\n")
-user_input_num = int(user_input)
+user_input = int(input("Enter the value\n"))
 
-calculated_values = days_to_units(user_input_num)
+calculated_values = days_to_units(user_input)
 print(calculated_values)
 
-Ex: 2,
+Ex: 2, Using type, print data type of a variable or single value
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+    condition_type = num_of_days > 0
+    print(type(condition_type))
+    if num_of_days > 0:
+        return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+    else:
+        return "Invalid Num"
+
+user_input = int(input("Enter the value\n"))
+
+calculated_values = days_to_units(user_input)
+print(calculated_values)
+
+Ex: 3, 
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+    if num_of_days > 0:
+        return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+    elif num_of_days == 0:
+        return "Please enter Valid Num"
+    else:
+        return "Invalid Num"
+
+user_input = int(input("Enter the value\n"))
+
+calculated_values = days_to_units(user_input)
+print(calculated_values)
+------------------------------------------------- More User Input Validation -----------------------------------------------
