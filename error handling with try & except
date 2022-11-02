@@ -1,0 +1,57 @@
+Try / Except: or, Try / Catch
+- The try block: lets you "test" a block of code for errors. 
+- The except block: catches the error and lets you handle it.
+
+- The main difference between if else & try except we can cover multiple errors with the whole try except block. 
+
+- Cases: Where we can't really validate with if condition. 
+
+
+Ex:
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+        return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+
+def validate_and_execute():
+    try:
+
+        user_input_num = int(user_input)
+        if user_input_num > 0:
+            calculated_values = days_to_units(user_input_num)
+            print(calculated_values)
+        elif user_input_num == 0:
+            print("Please enter Valid Num")
+
+    except ValueError:
+        print("Pls enter correct details")
+
+user_input = input("Enter the value\n")
+validate_and_execute()
+-----------------------------------------------------------
+Ex:
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+        return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+
+def validate_and_execute():
+    try:
+
+        user_input_num = int(user_input)
+        if user_input_num > 0:
+            calculated_values = days_to_units(user_input_num)
+            print(calculated_values)
+        elif user_input_num == 0:
+            print("Please enter Valid Num")
+        else:
+            print("You entered a -ve num, no conversion")
+
+    except ValueError:
+        print("Pls enter correct details")
+
+user_input = input("Enter the value\n")
+validate_and_execute()
+
