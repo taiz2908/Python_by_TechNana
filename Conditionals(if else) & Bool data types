@@ -129,7 +129,9 @@ user_input = int(input("Enter the value\n"))
 calculated_values = days_to_units(user_input)
 print(calculated_values)
 ------------------------------------------------- More User Input Validation -----------------------------------------------
-Ex: 4, If user enter any text / float...., then we can use another if else statement. 
+Ex: 4, 
+- If user enter any text / float...., then we can use another if else statement. 
+- Also for good practice we have to create a function and call that function. 
 
 calculations_to_units = 20
 name_of_units = "hours"
@@ -139,11 +141,15 @@ def days_to_units(num_of_days):
         return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
     elif num_of_days == 0:
         return "Please enter Valid Num"
-   
+
+def validate_and_execute():
+    if user_input.isdigit():
+        user_input_num = int(user_input)
+        calculated_values = days_to_units(user_input_num)
+        print(calculated_values)
+    else:
+        print("Pls enter correct details")
+
 user_input = input("Enter the value\n")
-if user_input.isdigit():
-    user_input_num = int(user_input)
-    calculated_values = days_to_units(user_input_num)
-    print(calculated_values)
-else:
-    print("Pls enter correct details")
+validate_and_execute()
+
