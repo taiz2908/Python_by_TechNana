@@ -8,7 +8,7 @@ FUNCTIONS: To avoid repeating the same logic.
  - parameters are also called arguments. 
  - Informations can be passed into functions as parameters.  
 ---------------------------------------------------------------------------------------------
-2.User-Defined function:
+2.User-Defined function: When we create the function we have to callout the function. 
  - def : definition , A function is defined using the def keyword. 
  - Block of code which only runs when it is called. 
  - Caliing a function = to execute the function.
