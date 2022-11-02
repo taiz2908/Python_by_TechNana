@@ -132,6 +132,7 @@ print(calculated_values)
 Ex: 4, 
 - If user enter any text / float...., then we can use another if else statement. 
 - Also for good practice we have to create a function and call that function. 
+- piece of logic within that function.
 
 calculations_to_units = 20
 name_of_units = "hours"
@@ -153,3 +154,4 @@ def validate_and_execute():
 user_input = input("Enter the value\n")
 validate_and_execute()
 
+--------------------------------------------------- Nested If else -------------------------------------------------------------
