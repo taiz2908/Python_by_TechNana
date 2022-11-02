@@ -95,7 +95,7 @@ user_input = int(input("Enter the value\n"))
 calculated_values = days_to_units(user_input)
 print(calculated_values)
 
-Ex: 2, Using type, print data type of a variable or single value
+Ex: 2, Using "type" function , print data type of a variable or single value
 calculations_to_units = 20
 name_of_units = "hours"
 
@@ -129,3 +129,21 @@ user_input = int(input("Enter the value\n"))
 calculated_values = days_to_units(user_input)
 print(calculated_values)
 ------------------------------------------------- More User Input Validation -----------------------------------------------
+Ex: 4, If user enter any text / float...., then we can use another if else statement. 
+
+calculations_to_units = 20
+name_of_units = "hours"
+
+def days_to_units(num_of_days):
+    if num_of_days > 0:
+        return f"{num_of_days} days are { num_of_days * calculations_to_units} {name_of_units}"
+    elif num_of_days == 0:
+        return "Please enter Valid Num"
+   
+user_input = input("Enter the value\n")
+if user_input.isdigit():
+    user_input_num = int(user_input)
+    calculated_values = days_to_units(user_input_num)
+    print(calculated_values)
+else:
+    print("Pls enter correct details")
