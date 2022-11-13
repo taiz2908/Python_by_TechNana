@@ -1,0 +1,74 @@
+-------------------For Loop -----------------------------------------
+For Loop in Lists: Itirate the list structure .
+Ex:
+for i in range(5):
+    print(i)
+
+Ex: 
+marks = [11, 23, 44]
+for score in marks:
+    print(score)
+------------------------List: Collection of data types.---------------------------------
+- Define by []
+
+Ex: 0/p: [67]
+value = [45, 67, 22, "hello"]
+print(value[2])
+
+Ex:o/p: 2,3,4,5,6,7 , means 2-7
+a = [0,1,2,3,4,5,6,7,8,9]
+print(a[2:8])
+
+Ex: [25, 33, 54, 65, 56, 47]
+a = [10,51,25,33,54,65,56,47,38,19]
+print(a[2:8])
+
+Ex: o/p: [4,5,6,7,8,9]
+a = [0,1,2,3,4,5,6,7,8,9]
+print(a[4::])
+
+Ex: o/p: [9,6,3,0]
+a = [0,1,2,3,4,5,6,7,8,9]
+print(a[::-3])
+----------------------------------
+How to add in last? by using append()
+Ex:
+marks = [11, 23, 44]
+marks.append(99)
+print(marks)
+O/p: [11, 23, 44, 99]
+
+How to add in Between?
+Ex: 0 means starting
+1 means after 11
+marks = [11, 23, 44]
+marks.insert(1, 99)
+print(marks)
+O/P: [11, 99, 23, 44]
+
+Ex: We can use in function in the list:
+marks = [11, 23, 44]
+marks.insert(0, 90)
+print(10 in marks)
+o/p: False
+
+Ex: 3
+marks = [11, 23, 44]
+print(len(marks))
+
+Ex:4, print the values by using while loop 
+marks = [10, 33, 44, 56, 77]
+i = 0
+while i < len(marks):
+    print(marks [i]) ---> marks of i 
+    i += 1
+o/p: 10 33 44 56 77
+
+Ex:5,
+marks = [10, 33, 44, 56, 77]
+i = 0
+while i < len(marks):
+    print(marks [i])
+    i += 1
+marks.clear()
+print(marks)
