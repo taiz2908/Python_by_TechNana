@@ -2,10 +2,12 @@ Variables:
  - Define memory location where data is being store
  - Variables are the containers for storing the value. 
 
- Basic Types in Python -  
- 1) Numbers(integers '22/1/43', floating'1.1/3.4,11.3'), 
- 2) boolean('True/False'), 
- 3) strings
+ Basic Data Types in Python -  
+ 1) Integers ('22/1/43')
+ 2) Floating ('1.1/3.4,11.3'), 
+ 3) boolean ('True/False'), 
+ 4) strings ("Value")
+ 5) Lists: to store multiple items in a single variable. [string/boolen/Int]
 
 Ex:
   name = "Taizun"
